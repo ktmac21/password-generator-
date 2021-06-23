@@ -14,7 +14,7 @@ function generatePassword() {
   var lengthInput = prompt("Please enter password length between 8 and 128");
 
   if (lengthInput < 8 || lengthInput > 128) {
-    alert("Please enter a valid number between 8 and 128! Please click Generate Password.");
+    alert("Please enter a valid number between 8 and 128! Click Generate Password again.");
     return //* stops running function *//
   }
 
@@ -24,7 +24,7 @@ function generatePassword() {
   var confirmSymb = confirm("Include symbols?");
 
   if (!confirmUpper && !confirmLower && !confirmNumb && !confirmSymb) {
-    alert("You must pick at least one critera! Please click Generate Password.");
+    alert("You must pick at least one critera! Click Generate Password again.");
     return
   }
 
